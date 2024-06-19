@@ -190,3 +190,8 @@ body{
   /* TEST */
   background:none;
 }
+#secondHand{
+  width:calc(var(--general-size)*4.2);
+  height:calc(var(--general-size)*0.2);
+  rotate:-90deg;
+}
