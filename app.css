@@ -185,6 +185,7 @@ body{
   -webkit-clip-path:path('M0,0 Q220,10 0,30 Z'); */
   /* try to insert this in the html instead 
   clip-path:path('M0,0 Q220,10 0,30 Z'); */
+  rotate:-90deg;
   /* TEST */
   background:none;
 }
