@@ -17,7 +17,7 @@ function updateHands(){
   let minutesDegrees = minutes * 6;
 // will need to adjust hourHand by 6deg every 10min
 // every hour is 30deg
-  let hoursDegrees = hours * 30;
+  let hoursDegrees = (hours * 30) + (Math.floor(minutes / 10) * 6);
   secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
   minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
   hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
