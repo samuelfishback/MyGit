@@ -189,3 +189,23 @@ body{
   height:calc(var(--general-size)*0.2);
   rotate:-90deg;
 }
+#digitalContainer{
+  width:calc(var(--general-size)*3);
+  height:calc(var(--general-size)*1.5);
+  background:#ddd;
+  position:absolute;
+  left:50%;
+  translate:-50% -50%;
+  top:50%;
+  border:1px solid #444;
+}
+.digital_times{
+  width:calc(var(--general-size)*2.5);
+  height:calc(var(--general-size)*1.25);
+  background:#444;
+  position:absolute;
+  left:50%;
+  translate:-50% -50%;
+  top:50%;
+  color:lime;
+}
