@@ -121,6 +121,7 @@ body{
 }
 #num6 span{
   rotate:270deg;
+  padding-bottom:3px;
 }
 #num7{
   rotate:-240deg;
@@ -187,11 +188,14 @@ body{
 #secondHand{
   width:calc(var(--general-size)*4.2);
   height:calc(var(--general-size)*0.2);
+  border:1px solid #444;
   rotate:-90deg;
 }
 #digitalContainer{
-  width:calc(var(--general-size)*3);
-  height:calc(var(--general-size)*1.5);
+  width:fit-content;
+  height:fit-content;
+  padding:calc(var(--general-size)/6)
+    calc(var(--general-size)/4);
   background:#ddd;
   position:absolute;
   left:50%;
@@ -212,11 +216,11 @@ body{
   height:fit-content;
   background:#444;
   text-align:center;
-  font-size:calc(var(--device-size)*0.05);
+  font-size:calc(var(--device-size)*0.04);
   color:lime;
 }
 /* is there a better way to write steps(1) */
-#digitalColon{
+.digital_colon{
   animation:blink 1s steps(1) infinite;
 }
 @keyframes blink{
